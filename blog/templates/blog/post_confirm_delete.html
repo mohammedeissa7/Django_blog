@@ -12,10 +12,12 @@
             {{ form|crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">
+            <button class="btn btn-outline-danger" type="submit">
                 Delete 
             </button>
-            <a href="{% url 'users:profile' %}"></a>
+            <a href="{% url 'post-detail' object.id %}" class="btn btn-outline-secondary">
+                Cancel
+            </a>
         </div>
     </form>
    </div>
